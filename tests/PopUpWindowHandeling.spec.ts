@@ -10,6 +10,7 @@ await clickme.click();
    await page.waitForTimeout(2000);
 
 let pageswitch = await page.context().pages();
+console.log(pageswitch);
 let secondwindow = await pageswitch[1];
 await secondwindow.bringToFront();
 
